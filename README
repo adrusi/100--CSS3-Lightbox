@@ -1,0 +1,1 @@
+A lightbox/imagezoomer with no javascript, just css3 and html5. It makes use of css3 transforms, transitions, and the css focus pseudo-class. It also uses to html5 contenteditable attribut.
