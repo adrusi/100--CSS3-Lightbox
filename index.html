@@ -7,6 +7,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic" rel="stylesheet" />
 		<link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" rel="stylesheet" />
 		<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet" />
+		<link rel="stylesheet" href="plugin.css" />
 		<style>
 			body {
 				font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
@@ -30,73 +31,28 @@
 				padding: 20px;
 				background: white;
 			}
-			/*begin lightbox code*/
-			figcaption, .lightbox .caption {
-				font-family: "Reenie Beanie";
-				font-size: 1.1em;
-				text-align: center;
-				line-height: 25px;
-			}
-			.lightbox {
-				float: right;
-				border: 10px solid white;
-				background: white;
-				_height: 125px;
-				line-height: 25px;
-				display: inline-block;
-				-webkit-box-shadow: 0 3px 10px #ccc; -moz-box-shadow: 0 3px 10px #ccc;
-				-webkit-transform: rotate(5deg); -moz-transform: rotate(5deg);
-				-webkit-transition: all 0.7s ease; -moz-transition: all 1s ease;
-			}
-			.lightbox:nth-child(even) {
-				float: left;
-				-webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg);
-			}
-			.lightbox:nthchild(even):hover {
-				-webkit-transform: rotate(1deg); -moz-transform: rotate(1deg);
-			}
-			.lightbox:nthchild(even):focus {
-				-webkit-transform: rotate(3deg) scale(2.5); -moz-transform: rotate(3deg) scale(2.5);
-			}
-			.lightbox:hover {
-				-webkit-transform: rotate(-1deg); -moz-transform: rotate(1deg);
-				-webkit-box-shadow: 0 3px 10px #666; -moz-box-shadow: 0 3px 10px #666;
-			}
-			.lightbox:focus {
-				outline: none;
-				-webkit-transform: rotate(-3deg) scale(2.5); -moz-transform: rotate(-3deg) scale(2.5);
-				-webkit-box-shadow: 0 3px 10px #666; -moz-box-shadow: 0 3px 10px #666;
-			}
-			.lightbox img {
-				width: 100px;
-				display: block;
-			}
-			.lightbox .media {
-				width: 100px;
-				display: block;
-			}
 		</style>
 	</head>
 	<body>
 		<div id="container">
 			<header>
-			<h1>Three Days Grace</h1>
+			<h1>This is 100% CSS</h1>
 			</header>
 			<section>
-				<h2>History</h2>
+				<h2>Hovering Over an Image Triggeres an Event</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-				<figure class="lightbox" contenteditable="true">
+				<figure class="lightbox inline" contenteditable="true">
 					<img src="images/example.png" alt="example image" />
 					<figcaption>Life Starts Now</figcaption>
 				</figure>
 				 Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
 			</section>
 			<section>
-				<h2>Why They Are Popular</h2>
+				<h2>But Much More Interestingly, so Does Clicking</h2>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-				<figure class="lightbox" contenteditable="true">
+				<figure class="lightbox inline" contenteditable="true">
 					<img src="http://www.threedaysgrace.com/sites/threedays6/files/1431784_1251388655_837070.jpg" alt="example image" />
-					<figcaption>Life Starts Now</figcaption>
+					<figcaption>The Whole Band</figcaption>
 				</figure>
 				 Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
 			</section>
