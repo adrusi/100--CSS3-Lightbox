@@ -1,9 +1,11 @@
 figcaption, .lightbox .caption {
 	font-family: "Reenie Beanie", cursive;
-	font-size: 1.1em;
+	/*font-size: 1.1em;*/
+	width: 100px;
 	text-align: center;
-	line-height: 25px;
+	line-height: 1.1em;
 	display: block;
+	margin-top: 5px;
 }
 .lightbox {
 	border: 10px solid white;

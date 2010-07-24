@@ -7,7 +7,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic" rel="stylesheet" />
 		<link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" rel="stylesheet" />
 		<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet" />
-		<link rel="stylesheet" href="plugin.css" />
+		<link href="plugin.css" rel="stylesheet" />
 		<style>
 			body {
 				font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
@@ -16,6 +16,7 @@
 			}
 			h1, h2, h3, h4, h5, h6 {
 				font-family: Cantarell, "Helvetica Neue", Verdana, Geneva, Helvetica, sans-serif;
+				text-shadow: 0 -1px #cccccc;
 			}
 			h2, h3 {
 				background: #e3e3e3;
@@ -24,12 +25,23 @@
 				padding: 10px 10px 10px 20px;
 				-moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px;
 				-moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px;
+				text-shadow: 0 1px #f8f8f8;
+				-webkit-box-shadow: -5px 0 0 #e3e3e3; -moz-box-shadow: -5px 0 0 #e3e3e3;
 			}
 			#container {
 				width: 500px;
 				margin: 0 auto;
 				padding: 20px;
 				background: white;
+				-webkit-box-shadow: 0 0 5px #666;
+			}
+			#container:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
 			}
 		</style>
 	</head>
@@ -39,7 +51,7 @@
 			<h1>This is 100% CSS</h1>
 			</header>
 			<section>
-				<h2>Hovering Over an Image Triggeres an Event</h2>
+				<h2>Hovering Over an Image Triggers an Event</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
 				<figure class="lightbox inline" contenteditable="true">
 					<img src="images/example.png" alt="example image" />
@@ -55,6 +67,33 @@
 					<figcaption>The Whole Band</figcaption>
 				</figure>
 				 Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+			</section>
+			<section>
+				<h2>In Addition to Being Inline With Text, the Plugin Allows a Gallery</h2>
+				<figure class="lightbox gallery" contenteditable="true">
+					<img src="http://www.threedaysgrace.com/sites/threedays6/files/1431784_1251388655_837070.jpg" alt="example image" />
+					<figcaption>The Whole Band</figcaption>
+				</figure>
+				<figure class="lightbox gallery" contenteditable="true">
+					<img src="http://userserve-ak.last.fm/serve/500/6232049/Three+Days+Grace+TDG.jpg" alt="example image" />
+					<figcaption>Something They did</figcaption>
+				</figure>
+				<figure class="lightbox gallery" contenteditable="true">
+					<img src="http://userserve-ak.last.fm/serve/500/52780/Three+Days+Grace.jpg" alt="example image" />
+					<figcaption>A Pic of Them</figcaption>
+				</figure>
+				<figure class="lightbox gallery" contenteditable="true">
+					<img src="http://userserve-ak.last.fm/serve/_/78898/Three+Days+Grace.jpg" alt="example image" />
+					<figcaption>Them in a Pic</figcaption>
+				</figure>
+				<figure class="lightbox gallery" contenteditable="true">
+					<img src="http://userserve-ak.last.fm/serve/_/39543217/Three+Days+Grace+_______.jpg" alt="example image" />
+					<figcaption>Them Doing Something</figcaption>
+				</figure>
+				<figure class="lightbox gallery" contenteditable="true">
+					<img src="http://userserve-ak.last.fm/serve/_/8446113/Three+Days+Grace+ThreeDaysGracePIC1.jpg" alt="example image" />
+					<figcaption>Them</figcaption>
+				</figure>
 			</section>
 		</div>
 	 </body>
