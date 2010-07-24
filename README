@@ -1,1 +1,11 @@
-A lightbox/imagezoomer with no javascript, just css3 and html5. It makes use of css3 transforms, transitions, and the css focus pseudo-class. It also uses to html5 contenteditable attribut.
+A lightbox/imagezoomer with no javascript, just css3 and html5. It makes use of css3 transforms, transitions, and the css focus pseudo-class. It also uses to html5 contenteditable attribute.
+
+Instrutions for the plugin:
+1) link to the plugin.css code like this: <link rel="stylesheet" href="path/to/plugin.css" />
+2) structure the images you want affected like this:
+	<figure class="lightbox inline" contenteditable="true">
+		<img src="images/example.png" alt="example image" />
+		<figcaption>Example</figcaption>
+	</figure>
+3) If the images you want affected aren't supposed to be part of the text, remove the inline class from the figure element.
+4) just add css after the plugin is loaded to customize the appearance of images
