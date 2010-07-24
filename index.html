@@ -16,9 +16,9 @@
 			}
 			h1, h2, h3, h4, h5, h6 {
 				font-family: Cantarell, "Helvetica Neue", Verdana, Geneva, Helvetica, sans-serif;
-				text-shadow: 0 -1px #cccccc;
+				text-shadow: 0 -1px #929292;
 			}
-			h2, h3 {
+			h2 {
 				background: #e3e3e3;
 				margin-left: -20px;
 				width: 250px;
@@ -26,16 +26,47 @@
 				-moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px;
 				-moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px;
 				text-shadow: 0 1px #f8f8f8;
-				-webkit-box-shadow: -5px 0 0 #e3e3e3; -moz-box-shadow: -5px 0 0 #e3e3e3;
+				-webkit-box-shadow: -5px 0 0 #e3e3e3, -1px 3px 3px #929292; -moz-box-shadow: -3px 3px 3px #929292, -1px 3px 3px #929292;
+			}
+			h3 {
+				text-align: center;
+				text-shadow: 0 1px #f8f8f8;
 			}
 			#container {
 				width: 500px;
 				margin: 0 auto;
 				padding: 20px;
 				background: white;
-				-webkit-box-shadow: 0 0 5px #666;
+				-webkit-box-shadow: 0 0 5px #666; -moz-box-shadow: 0 0 5px #666;
 			}
-			#container:after {
+			aside {
+				position: fixed;
+				right: 0;
+				background: white;
+				padding: 10px;
+				width: 230px;
+				-webkit-box-shadow: -3px 3px 3px #929292, 240px 3px 3px #929292; -moz-box-shadow: -3px 3px 3px #929292, 227px 3px #929292;
+				-moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px;
+				-moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px;
+				font-family: Cantarell, "Helvetica Neue", Verdana, Geneva, Helvetica, sans-serif;
+				font-size: 0.8em;
+			}
+			aside ul {
+				list-style: none;
+			}
+			aside ul li {
+				padding-bottom: 4px;
+				margin-top: 5px;
+				border-bottom: 1px solid #e3e3e3;
+			}
+			aside a {
+				color: black;
+				text-decoration: none;
+			}
+			aside a:hover {
+				text-decoration: underline;
+			}
+			#container:after, #gallery:after, #proscons:after {
 				content: ".";
 				display: block;
 				clear: both;
@@ -43,14 +74,64 @@
 				line-height: 0;
 				height: 0;
 			}
+			ul {
+				list-style-type: square;
+				list-style-position: inside;
+			}
+			input[type=text], textarea, input[type=email] {
+				border: 1px solid #929292;
+				color: #929292;
+				padding: 10px;
+				vertical-align: text-top;
+				width: 300px;
+				-webkit-box-shadow: #e3e3e3 0.1em 0.1em 0.2em;
+				box-shadow: #e3e3e3 0.1em 0.1em 0.2em;
+				-moz-box-shadow: #e3e3e3 0.1em 0.1em 0.2em;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				-border-radius: 5px;
+				-khtml-border-radius: 5px;
+				background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+				background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); 
+			}
+			input[type=text]:focus, textarea:focus, input[type=email]:focus {
+				-webkit-box-shadow: 0 0 3px #666; -moz-box-shadow: 0 0 3px #666;
+				outline: 0;
+			}
+			input[type=submit] {
+				border: 1px solid #929292;
+				color: #505050;
+				-webkit-box-shadow: #e3e3e3 0.1em 0.1em 0.2em;
+				box-shadow: #e3e3e3 0.1em 0.1em 0.2em;
+				-moz-box-shadow: #e3e3e3 0.1em 0.1em 0.2em;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				-border-radius: 5px;
+				-khtml-border-radius: 5px;
+				background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+				background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); 
+				padding: 10px;
+			}
 		</style>
 	</head>
 	<body>
 		<div id="container">
 			<header>
-			<h1>This is 100% CSS</h1>
+				<h1>This is 100% CSS</h1>
 			</header>
-			<section>
+			<aside>
+				<h3>Contents</h3>
+				<ul>
+					<li><a href="#1">Hovering Over an Image Triggers an Event</a></li>
+					<li><a href="#2">But Much More Interestingly, so Does Clicking</a></li>
+					<li><a href="#gallery">In Addition to Being Inline With Text, the Plugin Allows a Gallery</a></li>
+					<li><a href="#4">Also Images Can be Alone</a></li>
+					<li><a href="#5">How it Works</a></li>
+					<li><a href="#proscons">Pros/Cons</a></li>
+					<li><a href="#7">Contact the Developer</a></li>
+				</ul>
+			</aside>
+			<section id="1">
 				<h2>Hovering Over an Image Triggers an Event</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
 				<figure class="lightbox inline" contenteditable="true">
@@ -59,7 +140,7 @@
 				</figure>
 				 Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
 			</section>
-			<section>
+			<section id="2">
 				<h2>But Much More Interestingly, so Does Clicking</h2>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
 				<figure class="lightbox inline" contenteditable="true">
@@ -68,7 +149,7 @@
 				</figure>
 				 Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
 			</section>
-			<section>
+			<section id="gallery">
 				<h2>In Addition to Being Inline With Text, the Plugin Allows a Gallery</h2>
 				<figure class="lightbox gallery" contenteditable="true">
 					<img src="http://www.threedaysgrace.com/sites/threedays6/files/1431784_1251388655_837070.jpg" alt="example image" />
@@ -94,6 +175,56 @@
 					<img src="http://userserve-ak.last.fm/serve/_/8446113/Three+Days+Grace+ThreeDaysGracePIC1.jpg" alt="example image" />
 					<figcaption>Them</figcaption>
 				</figure>
+			</section>
+			<section id="4">
+				<h2>Also images can be alone</h2>
+				<figure class="lightbox" contenteditable="true">
+					<img src="images/example2.jpeg" alt="example image" />
+					<figcaption>This Way They're Bigger</figcaption>
+				</figure>
+			</section>
+			<section id="5">
+				<h2>How it works</h2>
+				<p>The core functionality, the part of the lightbox that is so revolutionary, is the ability of CSS to recognize a click event. To do so is a hack, but uses valid css3 and html5. Css has been able to recognize a form field being clicked for a while with the :focus pseudo-class, but with HTML5's contenteditable attribute, any element can be "focused". When css recognizes the click it uses css3 transitions to animate the image.</p>
+				<p>There are some uncommon tricks that are used for user exprerience. To make the photos feel "real" every even numbered photo is rotated differently from odd numbered photos to give them almost a carefree appearance. Also, by registering the :active pseudo class in the same way as the :focus pseudo class, the animation begins , as a javascript even, onMouseDown instead of how most clicks are triggered, with the onMouseUp event.</p>
+			</section>
+			<section id="proscons">
+				<h2>Pros/Cons</h2>
+				<section style="float: left; width: 245px;">
+					<h3>Its Advantages</h3>
+					<ul>
+						<li>In the future, more people will be able to view css3 effects than will have javascript enabled</li>
+						<li>Fully supported by firefox 4.0+, safari 4.0+ and chrome (any version)</li>
+						<li>CSS3 transitions are much smoother and much less cpu intensive than javascript animations</li>
+					</ul>
+				</section>
+				<section style="float: left; width: 245px;">
+					<h3>Its Disadvantages</h3>
+					<ul>
+						<li>For now, many more people have javascript enabled than have css3 capable browsers</li>
+						<li>No support for IE... until a javascript fallback is made</li>
+					</ul>
+				</section>
+			</section>
+			<section id="7">
+				<h2>Contact the Developer</h2>
+				<form action="mail.php" method="post">
+					<p>
+						<label for="name">Your Name</label><br />
+						<input type="text" name="name" style="width:400px;" />
+					</p>
+					<p>
+						<label for="email">Your Email</label><br />
+						<input type="email" name="respondTo" style="width:400px;" />
+					</p>
+					<p>
+						<label for="message">Your Message</label><br />
+						<textarea name="message" style="width:400px;height:250px;"></textarea>
+					</p>
+					<p>
+						<input type="submit" value="Send!" />
+					</p>
+				</form>
 			</section>
 		</div>
 	 </body>
